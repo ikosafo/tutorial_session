@@ -1,0 +1,85 @@
+.header {
+    /* background-image: url('./../images/hero.jpg');
+    background-image: url('./../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover; */
+
+    height: 100vh;
+    background: rgba(0, 0, 0, 0) url('./../images/hero.jpg') no-repeat scroll center center / cover;
+    position: relative;
+    display: flex;
+}
+
+.mainmenu ul {
+    display: flex;
+    justify-content: center
+}
+
+.topicon {
+    color: white;
+}
+
+.header .container {
+    position: absolute;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    top: 32px;
+    right: 0;
+}
+
+@media (max-width:900px) {
+    .mainmenu {
+        display: none;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Set the overlay color and opacity */
+    z-index: 1;
+    /* Ensure the overlay is above the header content */
+}
+
+.topitems {
+    z-index: 2;
+}
+
+.topitems .topicon:not(:last-child) {
+    margin-right: 5px;
+}
+
+.mainmenu li {
+    margin-right: 10%;
+    z-index: 2;
+}
+
+.mainmenu li:first-child {
+    margin-left: 10%;
+}
+
+.mainmenu a {
+    color: #ffffff;
+}
+
+.site_logo {
+    z-index: 2;
+}
+
+.header .headline-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    text-align: center;
+    z-index: 2;
+    width: 90%;
+    margin: auto;
+}
